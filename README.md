@@ -6,6 +6,7 @@
     <li>PureData - http://protocoder.org/</li>
     <li>Protocoder - http://protocoder.org/</li>
     <li>Adafruit Neopixel Library - https://github.com/adafruit/Adafruit_NeoPixel</li>
+    <li> Adafruit Color Sensor Driver - https://github.com/adafruit/Adafruit_TCS34725</li>
 </ul>
 
 
