@@ -1,0 +1,26 @@
+#N canvas 914 476 450 300 10;
+#X obj 108 58 readsf~;
+#X obj 147 83 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 147 156 timer;
+#X floatatom 147 177 15 0 0 0 - - -;
+#X obj 147 105 t b b;
+#X obj 43 232 s tempo;
+#X obj 43 14 inlet;
+#X obj 43 212 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 43 141 bang;
+#X obj 167 214 metro 221457;
+#X msg 108 36 open 1_pat2.wav \, 1;
+#X obj 43 191 metro 14752;
+#X connect 0 1 1 0;
+#X connect 1 0 4 0;
+#X connect 1 0 10 0;
+#X connect 2 0 3 0;
+#X connect 4 0 2 0;
+#X connect 4 1 2 1;
+#X connect 6 0 8 0;
+#X connect 7 0 5 0;
+#X connect 8 0 11 0;
+#X connect 10 0 0 0;
+#X connect 11 0 7 0;

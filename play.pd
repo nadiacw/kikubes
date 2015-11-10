@@ -1,0 +1,26 @@
+#N canvas 590 215 627 541 10;
+#X floatatom 172 67 5 0 0 0 - - -;
+#X text 209 65 x;
+#X obj 106 358 inlet~;
+#X obj 124 441 dac~;
+#X obj 124 397 *~;
+#X obj 172 42 inlet;
+#X text 69 357 loop;
+#X floatatom 172 186 5 0 0 0 - - -;
+#X obj 175 106 hsl 128 15 -10 10 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6393 1;
+#X obj 172 163 - 1;
+#X obj 172 141 autoscale 6 0;
+#X obj 172 358 vline~;
+#X msg 172 334 \$1 50;
+#X connect 0 0 8 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X connect 4 0 3 1;
+#X connect 5 0 0 0;
+#X connect 7 0 12 0;
+#X connect 8 0 10 0;
+#X connect 9 0 7 0;
+#X connect 10 0 9 0;
+#X connect 11 0 4 1;
+#X connect 12 0 11 0;

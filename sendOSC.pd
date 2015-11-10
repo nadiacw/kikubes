@@ -1,0 +1,16 @@
+#N canvas 245 196 843 569 10;
+#X obj 62 151 mrpeach/packOSC;
+#X obj 62 176 mrpeach/udpsend;
+#X msg 189 151 connect 192.168.1.131 9020;
+#X obj 62 94 pack 0 0;
+#X obj 107 48 r tempo;
+#X msg 107 67 1;
+#X floatatom 62 64 5 0 0 0 - - -;
+#X msg 62 128 send /play \$1 \$2;
+#X connect 0 0 1 0;
+#X connect 2 0 1 0;
+#X connect 3 0 7 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 1;
+#X connect 6 0 3 0;
+#X connect 7 0 0 0;
